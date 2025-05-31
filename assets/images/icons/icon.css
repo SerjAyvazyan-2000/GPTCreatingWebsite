@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-arrow{
+    mask-image: url(iconArrow.svg);
+    -webkit-mask-image: url(iconArrow.svg);
+}
+
+.icon-star{
+    mask-image: url(star.svg);
+    -webkit-mask-image: url(star.svg);
+}
+.arrow-right{
+    mask-image: url(arrowRight.svg);
+    -webkit-mask-image: url(arrowRight.svg);
+}
+.arrow-rocket-launch{
+    mask-image: url(RocketLaunch.svg);
+    -webkit-mask-image: url(RocketLaunch.svg);
+}
+.icon-openAI{
+    mask-image: url(OpenAI.svg);
+    -webkit-mask-image: url(OpenAI.svg);
+}
+.icon-arrow-down{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+
+
+
