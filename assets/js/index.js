@@ -205,3 +205,66 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleBtn.classList.toggle('active');
     });
 });
+
+
+
+
+const lenis = new Lenis();
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const parallaxItems = document.querySelectorAll('[data-parallax]');
+    let isActive = false;
+
+    document.addEventListener("mousemove", (e) => {
+        const { innerWidth, innerHeight } = window;
+        const offsetX = (e.clientX - innerWidth / 2) / innerWidth;
+        const offsetY = (e.clientY - innerHeight / 2) / innerHeight;
+
+        parallaxItems.forEach(el => {
+            const speed = parseFloat(el.dataset.speed) || 1.5;
+            const invert = el.dataset.invert === "true";
+
+            const moveX = (invert ? -1 : 1) * offsetX * speed * 100;
+            const moveY = (invert ? -1 : 1) * offsetY * speed * 100;
+
+            if (isActive) {
+                el.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            } else {
+                el.style.transform = `translate(0, 0)`;
+            }
+        });
+
+        isActive = true;
+    });
+
+    document.addEventListener("mouseleave", () => {
+        parallaxItems.forEach(el => {
+            el.style.transform = `translate(0, 0)`;
+        });
+        isActive = false;
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll('.animation');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => observer.observe(section));
+});

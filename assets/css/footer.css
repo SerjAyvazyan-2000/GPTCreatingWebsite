@@ -6,6 +6,63 @@
     margin-top: 150px;
 }
 
+footer .footer-logo,
+footer .footer-nav li,
+footer .footer-actions,
+footer .footer-clue{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease;
+}
+
+
+
+footer.animate .footer-logo {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+footer.animate .footer-nav li:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+footer.animate .footer-nav li:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+footer.animate .footer-nav li:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+footer.animate .footer-nav li:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+footer.animate .footer-nav li:nth-child(5) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+footer.animate .footer-actions {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s;
+}
+
+footer.animate .footer-clue {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+
+
 .footer-container {
     max-width: 1374px;
     width: 100%;
@@ -60,11 +117,13 @@
     line-height: 100%;
     text-align: center;
     color: var(--white);
+    transition: .3s;
 
 
 }
 
 .footer-nav ul li a:hover {
+    color: var(--gold);
 
 }
 
@@ -87,7 +146,10 @@
 .footer-logo {
     max-width: 112px;
 }
-
+.footer-actions{
+    gap: 10px;
+    display: flex;
+}
 .footer-btn-login {
     border: 1px solid var(--gray);
     background: var(--dark-black);
@@ -98,6 +160,7 @@
     font-size: 14px;
     line-height: 100%;
     text-align: center;
+    transition: .5s;
 
 }
 
@@ -111,9 +174,20 @@
     font-size: 14px;
     line-height: 100%;
     text-align: center;
+    transition: .5s;
 
 }
 
+.footer-btn-register:hover {
+    background: var(--gold);
+    color: var(--dark-black);
+
+}
+.footer-btn-login:hover {
+    background: var(--gold);
+    color: var(--dark-black);
+
+}
 
 @media (max-width: 1500px) {
 
@@ -231,8 +305,6 @@
 
     .footer-actions{
         width: 100%;
-        gap: 10px;
-        display: flex;
     }
     .footer-actions button{
         width: 100%;

@@ -29,9 +29,7 @@
     position: absolute;
 }
 
-.hero-parallax {
-    position: absolute;
-}
+
 
 .hero-parallax-one {
     max-width: 46px;
@@ -82,6 +80,106 @@
     z-index: -1;
 }
 
+
+.powered-block,
+.hero-users-mobile,
+.hero-gif,
+.hero-users,
+.hero-clue,
+.hero-framer,
+.hero-framer-two {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.hero-btn{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.5s ease;
+}
+.hero-tag{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.hero-section.animate .hero-btn {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.hero-section.animate .powered-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.hero-section.animate .hero-users-mobile {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.hero-section.animate .hero-tag {
+    opacity: 1;
+    transition-delay: 0.8s;
+}
+
+.hero-section.animate .hero-gif {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+.hero-section.animate .hero-users {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.2s;
+}
+
+.hero-section.animate .hero-clue {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+
+
+.hero-section.animate .hero-framer {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
+}
+
+.hero-section.animate .hero-framer-two {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2s;
+}
+
+.hero-titles h1{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s ease;
+}
+.hero-titles p{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s ease;
+}
+
+.hero-section.animate .hero-titles h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.hero-section.animate .hero-titles p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+
+
 .hero-tag {
     position: absolute;
     right: -60px;
@@ -121,7 +219,9 @@
 .hero-btn {
     margin-top: 62px;
 }
-
+.hero-btn:hover {
+    background: var(--white);
+}
 .powered-block {
     gap: 7px;
     margin-top: 18px;
@@ -156,10 +256,14 @@
 }
 
 .hero-cursor {
-    position: absolute;
     max-width: 55px;
     left: 132px;
     top: 290px;
+    position: absolute;
+}
+[data-parallax] {
+    will-change: transform;
+    transition: transform 0.2s ease;
 }
 
 .hero-framer {
@@ -184,11 +288,122 @@
 }
 
 .benefit-section {
-    padding: 120px 0 0;
+    padding: 70px 0 0;
     position: relative;
     z-index: 2;
 }
 
+.benefit-section .benefit-titles,
+.benefit-title-decor,
+.benefit-bottom-titles,
+.benefit-table,
+.benefit-tools,
+.benefit-tools-info,
+.benefit-body-border,
+.benefit-cnt-decor {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.benefit-section.animate .benefit-tools-info {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.2s;
+}
+.benefit-tools .btn-gold:hover{
+    background: var(--dark-black);
+    color: var(--white);
+}
+.benefit-tools .btn-gold:hover i{
+    background: var(--white);
+}
+.team-btn:hover{
+    background: var(--dark-black);
+    color: var(--white);
+}
+
+.team-btn:hover i{
+    background: var(--white);
+}
+
+.functional-info .btn-gold:hover{
+    background: var(--dark-black);
+    color: var(--white);
+}
+.functional-info .btn-gold:hover i{
+    background: var(--white);
+}
+.advantages-bnt .btn-gold:hover{
+    background: var(--dark-black);
+    color: var(--white);
+}
+.advantages-bnt .btn-gold:hover i{
+    background: var(--white);
+}
+
+
+.trust-btn:hover{
+    background: var(--dark-black);
+    color: var(--white);
+}
+
+.trust-btn:hover i{
+    background: var(--white);
+}
+
+
+
+
+
+
+
+
+.easy-start-btn:hover{
+    background: var(--white);
+
+}
+.benefit-section.animate .benefit-titles {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.benefit-section.animate .benefit-title-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+.benefit-section.animate .benefit-bottom-titles {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+.benefit-section.animate .benefit-table {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+.benefit-section.animate .benefit-tools.desktop-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.6s;
+}
+.benefit-section.animate .benefit-body-border {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
+}
+.benefit-section.animate .benefit-tools.mobile-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2s;
+}
+.benefit-section.animate .benefit-cnt-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.2s;
+}
 .benefit-decor {
     position: absolute;
     left: 0;
@@ -526,9 +741,169 @@
     max-width: 32px;
 }
 
+.how-work-section .section-titles h2,
+.how-work-section .section-titles p,
+.how-work-section .easy-start-text h3,
+.how-work-section .easy-start-text p,
+.how-work-section .easy-start-decor {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+
+.how-work-section.animate .section-titles h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.how-work-section.animate .section-titles .desktop-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.how-work-section.animate .section-titles .mobile-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.how-work-section.animate .easy-start-text h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+.how-work-section.animate .easy-start-text p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+
+
+.how-work-section.animate .easy-start-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+
 .how-work-section .section-titles h2 {
     margin-bottom: 16px;
 }
+
+.how-work-body .easy-start-text h3,
+.how-work-body .easy-start-text p,
+.how-work-body .easy-start-decor,
+.how-work-body .team-titles h2,
+.how-work-body .team-titles p,
+.how-work-body .team-title-decor,
+.how-work-body .info-left-block,
+.how-work-body .info-right-block,
+.how-work-body .team-peoples,
+.how-work-body .team-block-icon{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.how-work-body .team-tag{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.how-work-body.animate .easy-start-text h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.how-work-body.animate .easy-start-text p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+
+
+.how-work-body.animate .easy-start-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+.how-work-body.animate .team-titles h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+.how-work-body.animate .team-titles p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.2s;
+}
+
+.how-work-body.animate .team-title-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+
+.how-work-body.animate .info-left-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.6s;
+}
+
+.how-work-body.animate .info-right-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
+}
+
+.how-work-body.animate .team-peoples {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2s;
+}
+
+.how-work-body.animate .team-block-icon {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.2s;
+}
+
+
+
+
+.how-work-body.animate .team-tag--one {
+    opacity: 1;
+    transition-delay: 2.8s;
+}
+
+.how-work-body.animate .team-tag--two {
+    opacity: 1;
+    transition-delay: 3s;
+}
+
+.how-work-body.animate .team-tag--tree {
+    opacity: 1;
+    transition-delay: 3.2s;
+}
+
+.how-work-body.animate .team-tag--for {
+    opacity: 1;
+    transition-delay: 3.4s;
+}
+
+
+
+
+
+
+
 
 .easy-start-block {
     position: relative;
@@ -775,6 +1150,102 @@
 .functional-section {
     padding-bottom: 140px;
 
+}
+
+.functional-section .functional-titles h2,
+.functional-section .functional-titles p,
+.functional-section .functional-item,
+.functional-section .functional-info-mobile h3,
+.functional-section .functional-info-mobile p,
+.functional-section .functional-cnt,
+.functional-section .functional-info h3,
+.functional-section .functional-info p,
+.functional-section .functional-info b,
+.functional-section .screens-shadow,
+.functional-section .screens-shadow-two {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.functional-section.animate .functional-titles h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.functional-section.animate .functional-titles p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.functional-section.animate .functional-item:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.functional-section.animate .functional-item:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+.functional-section.animate .functional-item:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+.functional-section.animate .functional-info-mobile h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.2s;
+}
+
+.functional-section.animate .functional-info-mobile p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+
+.functional-section.animate .functional-cnt {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.6s;
+}
+
+.functional-section.animate .functional-info h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
+}
+
+.functional-section.animate .functional-info p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2s;
+}
+
+.functional-section.animate .functional-info b {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.2s;
+}
+
+
+
+.functional-section.animate .screens-shadow {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.6s;
+}
+
+.functional-section.animate .screens-shadow-two {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.8s;
 }
 
 .functional-container {
@@ -1139,6 +1610,53 @@
     height: 420px;
     min-width: max-content;
 }
+.advantages-section .section-titles p,
+.advantages-section .section-titles h2,
+.advantages-section .section-titles b,
+.advantages-section .advantages-bnt,
+.advantages-section .scroll-container,
+.advantages-section .advantages-decor {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.advantages-section.animate .section-titles p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.advantages-section.animate .section-titles h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.advantages-section.animate .section-titles b {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.advantages-section.animate .scroll-container {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+.advantages-section.animate .advantages-bnt {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+.advantages-section.animate .advantages-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.2s;
+}
+
 
 .advantage-average-item img {
     width: 100%;
@@ -1181,6 +1699,51 @@
     position: relative;
     z-index: 2;
 }
+.reviews-section .reviews-titles p,
+.reviews-section .reviews-titles h2,
+.reviews-section .reviews-title-decor,
+.reviews-section .reviews-item,
+.reviews-section .reviews-body-decor {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reviews-section.animate .reviews-titles p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.reviews-section.animate .reviews-titles h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.reviews-section.animate .reviews-title-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+/* Отзывы поочерёдно */
+.reviews-section.animate .reviews-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+
+
+
+
+.reviews-section.animate .reviews-body-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.6s;
+}
+
 
 .reviews-title-decor {
     max-width: 152px;
@@ -1516,6 +2079,59 @@
     padding: 0 20px;
     margin: 0 auto;
     width: 100%;
+}
+
+.trust-section .trust-info,
+.trust-section .trust-info-mobile,
+.trust-section .trust-media,
+.trust-section .trust-media-decor,
+.trust-section .trust-decor {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.trust-section.animate .trust-info-mobile {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.trust-section.animate .trust-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.trust-section.animate .trust-media {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.trust-section.animate .trust-media-decor {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.trust-section.animate .trust-info {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+
+
+
+
+.trust-section.animate .trust-decor:nth-child(1),
+.trust-section.animate .trust-decor:nth-child(2),
+.trust-section.animate .trust-decor:nth-child(3),
+.trust-section.animate .trust-decor:nth-child(4),
+.trust-section.animate .trust-decor:nth-child(5),
+.trust-section.animate .trust-decor:nth-child(6) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.6s;
 }
 
 .trust-body {

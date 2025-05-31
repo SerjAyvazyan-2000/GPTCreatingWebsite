@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
 </head>
 <body>
 
@@ -74,7 +74,7 @@
     </header>
 
     <main class="main">
-        <section class="hero-section">
+        <section class="hero-section animation">
 
             <div class="hero-container">
                 <div class="hero-body">
@@ -116,7 +116,7 @@
                     <div class="hero-clue G-flex">
                         <img src="assets/images/heroClue.webp" alt="">
                     </div>
-                    <div class="hero-cursor G-flex">
+                    <div data-parallax data-speed="1.2" class="hero-cursor  G-flex">
                         <img src="assets/images/heroCursor.webp" alt="">
                     </div>
                     <div class="hero-framer G-flex">
@@ -128,16 +128,16 @@
                         <img src="assets/images/heroFramer2.webp" alt="">
                     </div>
 
-                    <div class="hero-parallax hero-parallax-one G-flex">
+                    <div data-parallax data-speed="1.2" data-invert="true" class="hero-parallax hero-parallax-one G-flex">
                         <img src="assets/images/heroParallax1.png" alt="">
                     </div>
-                    <div class="hero-parallax hero-parallax-two G-flex">
+                    <div data-parallax data-speed="0.2" class="hero-parallax hero-parallax-two G-flex">
                         <img src="assets/images/heroParallax2.png" alt="">
                     </div>
-                    <div class="hero-parallax hero-parallax-tree G-flex">
+                    <div data-parallax data-speed="1.1" data-invert="true" class="hero-parallax hero-parallax-tree G-flex">
                         <img src="assets/images/heroParallax3.png" alt="">
                     </div>
-                    <div class="hero-parallax hero-parallax-for G-flex">
+                    <div data-parallax data-speed="0.6" class="hero-parallax hero-parallax-for G-flex">
                         <img src="assets/images/heroParallax4.png" alt="">
                     </div>
                 </div>
@@ -158,7 +158,7 @@
 
 
         <div class="wrapper-gradient">
-            <section id="advantages" class="benefit-section ">
+            <section id="advantages" class="benefit-section animation">
                 <div class="benefit-container">
                     <div class="benefit-body">
                         <div class="benefit-titles section-titles">
@@ -175,10 +175,10 @@
                                 <span>Именно такую сумму вы экономите, используя GPT-4. <span class="desktop-text-wrap">Ниже разобрали пункты более подробно</span></span>
                             </div>
 
-                            <div class="benefit-parallax benefit-parallax--one G-flex">
+                            <div data-parallax data-speed="1.2" class="benefit-parallax benefit-parallax--one G-flex">
                                 <img src="assets/images/benefitParallax1.webp" alt="">
                             </div>
-                            <div class="benefit-parallax benefit-parallax--two G-flex">
+                            <div data-parallax data-speed="1.2" data-invert="true" class="benefit-parallax benefit-parallax--two G-flex">
                                 <img src="assets/images/benefitParallax2.webp" alt="">
                             </div>
                         </div>
@@ -338,7 +338,7 @@
             </section>
 
 
-            <section id="howWork" class="how-work-section section">
+            <section id="howWork" class="how-work-section section animation">
                 <div class="container">
                     <div class="section-titles">
                         <h2><span class="mobile-text-wrap">сайт под любые задачи: от</span> бизнеса <span
@@ -348,7 +348,7 @@
                         <p class="mobile-block">Заменит штат сотрудников, сэкономив до 100%</p>
                     </div>
 
-                    <div class="how-work-body">
+                    <div class="how-work-body animation">
                         <div class="easy-start-block">
                             <div class="easy-start-text">
                                 <h3>простой запуск</h3>
@@ -421,13 +421,13 @@
                             <div class="team-tag team-tag--tree">Дизайнер</div>
                             <div class="team-tag team-tag--for">Ассистент</div>
 
-                            <div class="team-parallax team-parallax--one G-flex">
+                            <div data-parallax data-speed="0.2" class="team-parallax team-parallax--one G-flex">
                                 <img src="assets/images/teamParallax1.png" alt="">
                             </div>
-                            <div class="team-parallax team-parallax--two G-flex">
+                            <div data-parallax data-speed="0.5" data-invert="true" class="team-parallax team-parallax--two G-flex">
                                 <img src="assets/images/teamParallax2.png" alt="">
                             </div>
-                            <div class="team-parallax team-parallax--tree G-flex">
+                            <div data-parallax data-speed="0.3" class="team-parallax team-parallax--tree G-flex">
                                 <img src="assets/images/benefitParallax2.webp" alt="">
                             </div>
                         </div>
@@ -435,11 +435,10 @@
 
                     </div>
                 </div>
-
             </section>
 
 
-            <section id="functional" class="functional-section section">
+            <section id="functional" class="functional-section section animation">
                 <div class="functional-container">
                     <div class="functional-body">
                         <div class="functional-titles section-titles">
@@ -572,7 +571,7 @@
             </section>
         </div>
 
-        <section class="advantages-section">
+        <section class="advantages-section animation">
             <div class="advantages-container">
                 <div class="advantages-body">
 
@@ -698,7 +697,7 @@
         </section>
 
 
-        <section id="reviews" class="reviews-section section">
+        <section id="reviews" class="reviews-section section animation">
             <div class="reviews-container">
                 <div class="reviews-titles section-titles">
                     <p>Отзывы</p>
@@ -1162,7 +1161,7 @@
 
         </section>
 
-        <section class="trust-section">
+        <section class="trust-section animation">
             <div class="trust-container">
                 <div class="trust-body G-flex">
                     <div class="trust-info-mobile ">
@@ -1199,7 +1198,7 @@
                             </a>
                         </div>
 
-                        <div class="trust-cursor G-flex">
+                        <div data-parallax data-speed="1.2" class="trust-cursor G-flex">
                             <img src="assets/images/heroCursor.webp" alt="">
                         </div>
                     </div>
@@ -1228,7 +1227,7 @@
 
     </main>
 
-    <footer class="footer ">
+    <footer class="footer animation">
         <div class="footer-top-decor G-flex">
             <img class="img-desktop" src="assets/images/footerTopDecor.png" alt="">
             <img class="img-mobile" src="assets/images/footerTopDecorMobile.png" alt="">
@@ -1285,12 +1284,14 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+<script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
 <script src="assets/js/swiper.js"></script>
 <script src="assets/js/index.js"></script>
 
 </body>
 </html>
+
+
 
 
 
