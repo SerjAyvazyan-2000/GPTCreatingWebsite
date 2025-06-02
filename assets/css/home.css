@@ -1509,9 +1509,7 @@
     display: flex;
 }
 
-.advantages-columns > * {
-    flex-shrink: 0;
-}
+
 
 @keyframes infinite-scroll {
     from {
@@ -1565,7 +1563,6 @@
     max-width: 855px;
     height: 420px;
     width: 100%;
-    min-width: max-content;
 }
 
 .advantage-big-item img {
