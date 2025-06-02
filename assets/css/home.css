@@ -30,7 +30,6 @@
 }
 
 
-
 .hero-parallax-one {
     max-width: 46px;
     width: 100%;
@@ -92,12 +91,14 @@
     transform: translateY(40px);
     transition: all 0.8s ease;
 }
-.hero-btn{
+
+.hero-btn {
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.5s ease;
 }
-.hero-tag{
+
+.hero-tag {
     opacity: 0;
     transition: all 0.5s ease;
 }
@@ -156,12 +157,13 @@
     transition-delay: 2s;
 }
 
-.hero-titles h1{
+.hero-titles h1 {
     opacity: 0;
     transform: translateY(-50px);
     transition: all 0.8s ease;
 }
-.hero-titles p{
+
+.hero-titles p {
     opacity: 0;
     transform: translateY(-50px);
     transition: all 0.8s ease;
@@ -172,12 +174,12 @@
     transform: translateY(0);
     transition-delay: 0.2s;
 }
+
 .hero-section.animate .hero-titles p {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.2s;
 }
-
 
 
 .hero-tag {
@@ -219,9 +221,11 @@
 .hero-btn {
     margin-top: 62px;
 }
+
 .hero-btn:hover {
     background: var(--white);
 }
+
 .powered-block {
     gap: 7px;
     margin-top: 18px;
@@ -261,6 +265,7 @@
     top: 290px;
     position: absolute;
 }
+
 [data-parallax] {
     will-change: transform;
     transition: transform 0.2s ease;
@@ -305,63 +310,65 @@
     transform: translateY(40px);
     transition: all 0.8s ease;
 }
+
 .benefit-section.animate .benefit-tools-info {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 2.2s;
 }
-.benefit-tools .btn-gold:hover{
-    background: var(--dark-black);
-    color: var(--white);
-}
-.benefit-tools .btn-gold:hover i{
-    background: var(--white);
-}
-.team-btn:hover{
+
+.benefit-tools .btn-gold:hover {
     background: var(--dark-black);
     color: var(--white);
 }
 
-.team-btn:hover i{
+.benefit-tools .btn-gold:hover i {
     background: var(--white);
 }
 
-.functional-info .btn-gold:hover{
-    background: var(--dark-black);
-    color: var(--white);
-}
-.functional-info .btn-gold:hover i{
-    background: var(--white);
-}
-.advantages-bnt .btn-gold:hover{
-    background: var(--dark-black);
-    color: var(--white);
-}
-.advantages-bnt .btn-gold:hover i{
-    background: var(--white);
-}
-
-
-.trust-btn:hover{
+.team-btn:hover {
     background: var(--dark-black);
     color: var(--white);
 }
 
-.trust-btn:hover i{
+.team-btn:hover i {
+    background: var(--white);
+}
+
+.functional-info .btn-gold:hover {
+    background: var(--dark-black);
+    color: var(--white);
+}
+
+.functional-info .btn-gold:hover i {
+    background: var(--white);
+}
+
+.advantages-bnt .btn-gold:hover {
+    background: var(--dark-black);
+    color: var(--white);
+}
+
+.advantages-bnt .btn-gold:hover i {
     background: var(--white);
 }
 
 
+.trust-btn:hover {
+    background: var(--dark-black);
+    color: var(--white);
+}
+
+.trust-btn:hover i {
+    background: var(--white);
+}
 
 
-
-
-
-
-.easy-start-btn:hover{
+.easy-start-btn:hover {
     background: var(--white);
 
 }
+
 .benefit-section.animate .benefit-titles {
     opacity: 1;
     transform: translateY(0);
@@ -373,6 +380,7 @@
     transform: translateY(0);
     transition-delay: 0.6s;
 }
+
 .benefit-section.animate .benefit-bottom-titles {
     opacity: 1;
     transform: translateY(0);
@@ -384,26 +392,31 @@
     transform: translateY(0);
     transition-delay: 1.4s;
 }
+
 .benefit-section.animate .benefit-tools.desktop-block {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 1.6s;
 }
+
 .benefit-section.animate .benefit-body-border {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 1.8s;
 }
+
 .benefit-section.animate .benefit-tools.mobile-block {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 2s;
 }
+
 .benefit-section.animate .benefit-cnt-decor {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 2.2s;
 }
+
 .benefit-decor {
     position: absolute;
     left: 0;
@@ -783,7 +796,6 @@
 }
 
 
-
 .how-work-section.animate .easy-start-decor {
     opacity: 1;
     transform: translateY(0);
@@ -803,12 +815,13 @@
 .how-work-body .info-left-block,
 .how-work-body .info-right-block,
 .how-work-body .team-peoples,
-.how-work-body .team-block-icon{
+.how-work-body .team-block-icon {
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease;
 }
-.how-work-body .team-tag{
+
+.how-work-body .team-tag {
     opacity: 0;
     transition: all 0.8s ease;
 }
@@ -824,7 +837,6 @@
     transform: translateY(0);
     transition-delay: 0.4s;
 }
-
 
 
 .how-work-body.animate .easy-start-decor {
@@ -876,8 +888,6 @@
 }
 
 
-
-
 .how-work-body.animate .team-tag--one {
     opacity: 1;
     transition-delay: 2.8s;
@@ -897,12 +907,6 @@
     opacity: 1;
     transition-delay: 3.4s;
 }
-
-
-
-
-
-
 
 
 .easy-start-block {
@@ -1235,7 +1239,6 @@
 }
 
 
-
 .functional-section.animate .screens-shadow {
     opacity: 1;
     transform: translateY(0);
@@ -1306,6 +1309,7 @@
     max-width: 342px;
     width: 100%;
     position: relative;
+    z-index: 2;
 }
 
 .socials {
@@ -1610,6 +1614,7 @@
     height: 420px;
     min-width: max-content;
 }
+
 .advantages-section .section-titles p,
 .advantages-section .section-titles h2,
 .advantages-section .section-titles b,
@@ -1699,6 +1704,7 @@
     position: relative;
     z-index: 2;
 }
+
 .reviews-section .reviews-titles p,
 .reviews-section .reviews-titles h2,
 .reviews-section .reviews-title-decor,
@@ -1733,9 +1739,6 @@
     transform: translateY(0);
     transition-delay: 0.8s;
 }
-
-
-
 
 
 .reviews-section.animate .reviews-body-decor {
@@ -2096,11 +2099,13 @@
     transform: translateY(0);
     transition-delay: 0.2s;
 }
+
 .trust-section.animate .trust-decor {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.2s;
 }
+
 .trust-section.animate .trust-media {
     opacity: 1;
     transform: translateY(0);
@@ -2118,9 +2123,6 @@
     transform: translateY(0);
     transition-delay: 0.8s;
 }
-
-
-
 
 
 .trust-section.animate .trust-decor:nth-child(1),
@@ -2940,7 +2942,7 @@
 
 @media (max-width: 576px) {
     .benefit-section {
-        padding: 74px 0 0;
+        padding: 44px 0 0;
     }
 
     .faq-item {
@@ -3030,7 +3032,7 @@
     }
 
     .benefit-decor {
-        display: none;
+       top: -30px;
     }
 
     .trust-decor {
@@ -3129,7 +3131,8 @@
     }
 
     .benefit-cnt-decor {
-        bottom: 130px;
+        bottom: 125px;
+
     }
 
     .average-column {
@@ -3179,8 +3182,27 @@
         padding: 50px 27px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: unset;
+    }
+
+    .how-work-body.animate .easy-start-text p {
+        text-align: center;
+    }
+    .easy-start-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .easy-start-text button{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .how-work-body.animate .easy-start-text h3 {
+        text-align: center;
     }
 
     .easy-start-decor img {
@@ -3443,9 +3465,7 @@
         right: 20px;
     }
 
-    .benefit-cnt-decor {
-        bottom: 145px;
-    }
+
 
     .team-parallax--one {
         top: 383px;
