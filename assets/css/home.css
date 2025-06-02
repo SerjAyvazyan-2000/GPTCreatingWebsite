@@ -1609,7 +1609,6 @@
     max-width: 300px;
     width: 100%;
     height: 420px;
-    min-width: max-content;
 }
 
 .advantages-section .section-titles p,
@@ -1671,7 +1670,6 @@
     max-width: 600px;
     width: 100%;
     height: 420px;
-    min-width: max-content;
 }
 
 .advantage-another-item img {
